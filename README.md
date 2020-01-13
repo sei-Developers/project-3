@@ -66,3 +66,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+## User Stories 
+### v1
+ - as a user ,I want to be able to view the list of movies .
+ - as a user ,I want to be able to view the details of specifice movie.
+ - as a user ,i want to be able to search for a movie.
