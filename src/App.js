@@ -2,10 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Route from 'react-router-dom'
-
+// require('dotenv').config()
 import axios from 'axios'
 //you should include your key before run
-const key ='88b9190fe1421cadde98b2ae1af14141'
+const key = process.env.REACT_APP_KEY
 
 class App extends React.Component {
 
@@ -47,7 +47,7 @@ class App extends React.Component {
     this.apiCall(popularPath,'popular')  
   }
   render(){
-
+    console.log(key)
    
   return (
     <div className="App">
