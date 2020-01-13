@@ -4,6 +4,7 @@ import './App.css';
 import Route from 'react-router-dom'
 // require('dotenv').config()
 import axios from 'axios'
+import Movies from './components/Movies';
 //you should include your key before run
 const key = process.env.REACT_APP_KEY
 
@@ -51,7 +52,14 @@ class App extends React.Component {
    
   return (
     <div className="App">
-    
+    <Movies listName='Latest' movies={this.state.movieLists.latest}/><hr/>
+    <Movies listName='Popular'movies={this.state.movieLists.popular}/>
+
+
+
+
+  
+  
     </div>
   );}
 }
