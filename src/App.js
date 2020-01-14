@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Route from 'react-router-dom'
-// require('dotenv').config()
+import {Route} from 'react-router-dom'
 import axios from 'axios'
 import Movies from './components/Movies';
+import Header from './components/Header'
+
+
 //you should include your key before run
 const key = process.env.REACT_APP_KEY
 
@@ -29,7 +29,7 @@ class App extends React.Component {
     copyMovieList[name]=movieList
     //set vlaue for the movielists object
     this.setState({movieLists:copyMovieList})
-
+    
   })
   //log the error if it been found 
   .catch(error=>{  const copyError={...this.state.errors}
@@ -52,6 +52,7 @@ class App extends React.Component {
    
   return (
     <div className="App">
+      <Header/>
     <Movies listName='Latest' movies={this.state.movieLists.latest}/><hr/>
     <Movies listName='Popular'movies={this.state.movieLists.popular}/>
 
