@@ -1,5 +1,11 @@
+
 import React from 'react';
+
 import {Route} from 'react-router-dom'
+
+import './App.css';
+import Route from 'react-router-dom'
+
 import axios from 'axios'
 import Movies from './components/Movies';
 import Header from './components/Header'
@@ -52,16 +58,22 @@ class App extends React.Component {
    
   return (
     <div className="App">
+
       <Header/>
     <Movies listName='Latest' movies={this.state.movieLists.latest}/><hr/>
-    <Movies listName='Popular'movies={this.state.movieLists.popular}/>
 
+    <Movies listName='Latest' movies={this.state.movieLists.latest}/>
+
+    <Movies listName='Popular'movies={this.state.movieLists.popular}/>
+{/* print latest  */}
 
 
 
   
   
     </div>
+
+    
   );}
 }
 
