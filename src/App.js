@@ -5,7 +5,7 @@ import {Route} from 'react-router-dom'
 
 // import './App.css';
 
-
+import MovieDetail from "./show/MovieDetail";
 import axios from 'axios'
 import Movies from './components/Movies';
 import Header from './components/Header'
@@ -59,13 +59,39 @@ class App extends React.Component {
   return (
     <div className="App">
 
-      <Header/>
-    <Movies listName='Latest' movies={this.state.movieLists.latest}/><hr/>
+      {/* <Header/> */}
+      <Route  path="/" component={Header}/>
+    {/*<Movies listName='Latest' movies={this.state.movieLists.latest}/><hr/>
 
-    <Movies listName='Latest' movies={this.state.movieLists.latest}/>
+     <Movies listName='Latest' movies={this.state.movieLists.latest}/>
 
-    <Movies listName='Popular'movies={this.state.movieLists.popular}/>
+    <Movies listName='Popular'movies={this.state.movieLists.popular}/> */}
 {/* print latest  */}
+<Route exact  path="/" render={ () => {
+        return(
+          <React.Fragment>
+            <Movies listName='Latest' movies={this.state.movieLists.latest} /><hr/>
+            <Movies listName='Popular' movies={this.state.movieLists.popular}/>
+          </React.Fragment>
+        )
+      }}/>
+  
+
+    <Route  path="/movies/:id" render={()=>{
+          return(
+            <div>
+
+              <h1>{this.state.movieLists.popular.length ? 
+                <MovieDetail movies={this.state.movieLists}/>
+                :''}</h1>
+                
+               
+
+            </div>
+          )
+        }
+       }
+        />
 
 
 
