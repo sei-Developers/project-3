@@ -3,8 +3,8 @@ import React from 'react';
 
 import {Route} from 'react-router-dom'
 
-import './App.css';
-import Route from 'react-router-dom'
+// import './App.css';
+
 
 import axios from 'axios'
 import Movies from './components/Movies';
