@@ -4,6 +4,7 @@ import Route from 'react-router-dom'
 import axios from 'axios'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Movie from "./movie/Movie";
 
 class Movies extends React.Component {
 render(){
@@ -38,9 +39,9 @@ return(
             
             return(
             < div>
-            <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} // show all poster of movies 
-            width="200" height="250"/> 
-             
+            {/* <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} // show all poster of movies 
+            width="200" height="250"/>  */}
+             <Movie movie={movie}/>
             </div>
             )}
             )}

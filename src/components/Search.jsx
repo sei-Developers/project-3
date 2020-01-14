@@ -2,12 +2,15 @@ import axios from 'axios'
 import React from 'react'
 import _ from 'lodash'
 import { Search, Grid, Header, Segment } from 'semantic-ui-react'
+import { Link, withRouter,Redirect } from "react-router-dom";
 const key = process.env.REACT_APP_KEY
 class search extends React.Component{
     state={
         searchValue:'',
         searchResult:[],
-        isLoading:false
+        isLoading:false,
+        redir:false,
+        id:0
         
     }
 
@@ -38,11 +41,22 @@ class search extends React.Component{
         this.getNewList(value)
     }
     handleResultSelect = (e, { result }) =>{ 
-        console.log(result.id)
-        this.setState({ searchValue: result.title })}
+        // <Link to= {"/movies/"+result.id}/>
+       e.preventDefault()
+        this.setState({ searchValue: result.title ,redir:true,id:result.id})
+
+      // let history=useHistory();
+      // history.push(`/movies/${result.id}`)
+
+      }
 
 
     render(){
+
+      if(this.state.redir){
+        this.setState({redir:false})
+        return <Redirect push to={`/movies/${this.state.id}`}/>
+      }
         return (<form >
             <div>
             <input type="radio" name="gender" value="male"/> Male
@@ -59,15 +73,7 @@ class search extends React.Component{
             value={this.state.searchValue}
             {...this.props}
           />
-           
-    
-
-
-
-
-
-
         </form>)
     }
 }
-export default search 
+export default withRouter(search )
