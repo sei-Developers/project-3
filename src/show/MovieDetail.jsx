@@ -86,18 +86,22 @@ class MovieDetail extends Component {
                            
                         </div>
                         <div className="col-md-8">
-                            <div className="card-body">
-                                <h1 className="card-title">{this.state.movie.title}</h1>
-                                <h5 className="card-text">{moviePopular ? moviePopular.overview:''}</h5>
-                                <small class="text-muted">
-                                    <i class="material-icons">
+                            <div className="card-body"> 
+                                <div className="col-md-12  d-flex justify-content-between">
+                                    <h1 className="card-title pb-1">{this.state.movie.title}</h1> 
+                                    <span className="material-icons " style={{fontSize:"40px"}} onClick={this.openModal}>play_circle_outline</span> 
+                                </div>
+                                
+                                <small className="text-muted " style={{fontSize:"15px"}}>Release :<span >{this.state.movie.release_date}</span></small>
+                                <h5 className="card-text mt-4">{moviePopular ? moviePopular.overview:''}</h5>
+                                <small class="text-muted ">
+                                    <i class="material-icons " style={{fontSize:"20px"}}>
                                          stars
                                     </i>{ this.state.movie.vote_average}
                                 </small>
+                                 
                              </div>
-                                <div className="col-md-8">
-                                 <p><span className="material-icons" style={{fontSize:"40px"}} onClick={this.openModal}>play_circle_outline</span> </p>
-                            </div>
+                               
                         </div>
                     </div>
                 </div>
