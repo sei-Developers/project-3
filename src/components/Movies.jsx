@@ -22,7 +22,7 @@ return(
   showDots={false} // disable 
 
   responsive={responsive}
-  ssr={true} // means to render carousel on server-side.
+  ssr={false} // means to render carousel on server-side.
   infinite={true}
   autoPlay={false}
   autoPlaySpeed={0}
@@ -42,6 +42,10 @@ return(
             {/* <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} // show all poster of movies 
             width="200" height="250"/>  */}
              <Movie movie={movie}/>
+  <span class="list__movie-vote-average">{movie.vote_average}</span>
+            <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} // show all poster of movies 
+            width="200" height="250"/> 
+             
             </div>
             )}
             )}

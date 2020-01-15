@@ -13,7 +13,7 @@ code {
     monospace;
 }
 
-img{
+img {
   border: black;
-  border-style: double;
+  border-style: inset;
 }

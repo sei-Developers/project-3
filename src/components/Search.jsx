@@ -3,6 +3,7 @@ import React from 'react'
 import _ from 'lodash'
 import { Search, Grid, Header, Segment } from 'semantic-ui-react'
 import { Link, withRouter,Redirect } from "react-router-dom";
+
 const key = process.env.REACT_APP_KEY
 class search extends React.Component{
     state={
@@ -58,11 +59,7 @@ class search extends React.Component{
         return <Redirect push to={`/movies/${this.state.id}`}/>
       }
         return (<form >
-            <div>
-            <input type="radio" name="gender" value="male"/> Male
-            <input type="radio" name="gender" value="female"/> Female
-            <input type="radio" name="gender" value="other"/> Other
-            </div>
+          
             <Search
             
             onResultSelect={this.handleResultSelect}
