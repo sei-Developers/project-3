@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import {withRouter}from 'react-router-dom'
 import "bootstrap/dist/css/bootstrap.min.css";
-import axios from 'axios'
+// import axios from 'axios'
 import'../show/video.css'
 import { movie, character, video } from '../api/api'
 import ModalVideo from 'react-modal-video'
@@ -82,7 +82,7 @@ class MovieDetail extends Component {
                  <div className="card mb-6 mx-5 " style={{opacity:"0.8"}}>
                     <div className="row no-gutters">
                         <div className="col-md-4 hovereffect">
-                             <img className="card-img hovereffect"
+                             <img className="card-img hovereffect" alt="movie"
                                 src={ `https://image.tmdb.org/t/p/w500${this.state.movie.poster_path}`} />
 
                         </div>
@@ -95,27 +95,27 @@ class MovieDetail extends Component {
                                 
                                 <small className="text-muted " style={{fontSize:"15px"}}>Release :<span >{this.state.movie.release_date}</span></small>
                                 <h5 className="card-text mt-4">{this.state.movie.overview}</h5>
-                                <small class="text-muted ">
-                                    <i class="material-icons " style={{ color:"gold" ,fontSize:"35px"}}>
+                                <small className="text-muted ">
+                                    <i className="material-icons " style={{ color:"gold" ,fontSize:"35px"}}>
                                          star   
                                     </i>{this.state.movie.vote_average}<br/>
                                    
                                     <i>cast :</i><br></br> {this.state.character1 ?
                                     <div className="card-deck col-md-9 mt-4 ">
                                         <div className="card  bg-dark text-white ">
-                                            {this.state.character1.profile_path ? <img   className="card-img-top" src={ `https://image.tmdb.org/t/p/w500${this.state.character1.profile_path}`}></img>:<img className="card-img-top" height="250" src={ `https://image.tmdb.org/t/p/w500${this.state.movie.poster_path}`}/>}
+                                            {this.state.character1.profile_path ? <img  alt="movie" className="card-img-top" src={ `https://image.tmdb.org/t/p/w500${this.state.character1.profile_path}`}></img>:<img alt="movie" className="card-img-top" height="250" src={ `https://image.tmdb.org/t/p/w500${this.state.movie.poster_path}`}/>}
                                             <div className="card-body" height="30%">
                                             <h5 className="card-title ">{this.state.character1.name}</h5>
                                             </div>
                                         </div>
                                         <div className="card bg-secondary text-white ">
-                                        {this.state.character2.profile_path ? <img   className="card-img-top" src={ `https://image.tmdb.org/t/p/w500${this.state.character2.profile_path}`}></img>:<img className="card-img-top" height="250" src={ `https://image.tmdb.org/t/p/w500${this.state.movie.poster_path}`}/>}
+                                        {this.state.character2.profile_path ? <img  alt="movie" className="card-img-top" src={ `https://image.tmdb.org/t/p/w500${this.state.character2.profile_path}`}></img>:<img alt="movie" className="card-img-top" height="250" src={ `https://image.tmdb.org/t/p/w500${this.state.movie.poster_path}`}/>}
                                             <div className="card-body" height="30%">
                                             <h5 className="card-title">{this.state.character2.name}</h5>
                                             </div>
                                         </div>
                                         <div className="card bg-secondary text-white ">
-                                        {this.state.character3.profile_path ? <img  className="card-img-top" src={ `https://image.tmdb.org/t/p/w500${this.state.character3.profile_path}`}></img>:<img className="card-img-top" height="250" src={ `https://image.tmdb.org/t/p/w500${this.state.movie.poster_path}`}/>}
+                                        {this.state.character3.profile_path ? <img alt="movie" className="card-img-top" src={ `https://image.tmdb.org/t/p/w500${this.state.character3.profile_path}`}></img>:<img alt="movie" className="card-img-top" height="250" src={ `https://image.tmdb.org/t/p/w500${this.state.movie.poster_path}`}/>}
                                             <div className="card-body " height="30%">
                                             <h5 className="card-title">{this.state.character3.name}</h5>
                                             </div>

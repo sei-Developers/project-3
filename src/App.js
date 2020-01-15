@@ -60,21 +60,15 @@ class App extends React.Component {
     console.log(key)
    
   return (
-    <div className="App">
+    <div className="App alsubaie">
 
       {/* <Header/> */}
       <Route  path="/" component={Header}/>
-    {/*<Movies listName='Latest' movies={this.state.movieLists.latest}/><hr/>
-    <Header/>
-
-     <Movies listName='Latest' movies={this.state.movieLists.latest}/>
-
-    <Movies listName='Popular'movies={this.state.movieLists.popular}/> */}
-{/* print latest  */}
+    
 <Route exact  path="/" render={ () => {
         return(
           <React.Fragment>
-            <Movies listName='Latest' movies={this.state.movieLists.latest} /><hr/>
+            <Movies listName='Latest' movies={this.state.movieLists.latest} />
             <Movies listName='Popular' movies={this.state.movieLists.popular}/>
           </React.Fragment>
         )
