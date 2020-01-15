@@ -1,7 +1,7 @@
 import React from 'react';
-import Route from 'react-router-dom'
+// import Route from 'react-router-dom'
 // require('dotenv').config()
-import axios from 'axios'
+// import axios from 'axios'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Movie from "./movie/Movie";
@@ -39,8 +39,7 @@ return(
             
             return(
             < div className="alsubaie">
-            {/* <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} // show all poster of movies 
-            width="200" height="250"/>  */}
+           
              <Movie movie={movie}/>
   {/* <span class="list__movie-vote-average">{movie.vote_average}</span>
             <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} // show all poster of movies 
@@ -65,7 +64,7 @@ const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1020 },
       items: 5,
-      slidesToSlide: 5, // optional, default to 1.
+      slidesToSlide: 1, // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },

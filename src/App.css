@@ -54,12 +54,13 @@ img {
 
 .list__movie-vote-average{
     background-color: #f0a70d;
+    padding: 3px;
     position: relative;
     /* border-radius: 50%; */
     font-size: 30px;
     z-index: 1;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 60px;
     line-height: 30px;
     text-align: end;
     top: 15px;
@@ -74,6 +75,9 @@ h1 ,h3{
   text-align: left;
   padding: 2px;
 
+}
+h3{
+  background:#01d277
 }
 
 footer{
@@ -93,4 +97,7 @@ footer{
 #root > div > div.Header.alsubaie > div > h1  {
   color: white;
 
+}
+#root > div > div.Header.alsubaie > form > div > div.results.transition.visible{
+  left:80%
 }
