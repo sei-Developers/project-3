@@ -1,7 +1,10 @@
 
 import React from 'react';
+import './App.css';
+
 
 import {Route} from 'react-router-dom'
+import Footer from './components/Footer'
 
 // import './App.css';
 
@@ -62,6 +65,7 @@ class App extends React.Component {
       {/* <Header/> */}
       <Route  path="/" component={Header}/>
     {/*<Movies listName='Latest' movies={this.state.movieLists.latest}/><hr/>
+    <Header/>
 
      <Movies listName='Latest' movies={this.state.movieLists.latest}/>
 
@@ -93,10 +97,9 @@ class App extends React.Component {
        }
         />
 
-
-
-  
-  
+<div>
+{/* <Footer className="footer"></Footer> */}
+</div>
     </div>
 
     
