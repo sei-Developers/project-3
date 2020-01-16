@@ -1,26 +1,30 @@
 {
   "files": {
-    "main.css": "/project-3/static/css/main.17eb934e.chunk.css",
-    "main.js": "/project-3/static/js/main.35c76b19.chunk.js",
-    "main.js.map": "/project-3/static/js/main.35c76b19.chunk.js.map",
+    "main.css": "/project-3/static/css/main.52cfdacb.chunk.css",
+    "main.js": "/project-3/static/js/main.9b706211.chunk.js",
+    "main.js.map": "/project-3/static/js/main.9b706211.chunk.js.map",
     "runtime-main.js": "/project-3/static/js/runtime-main.0fa09ced.js",
     "runtime-main.js.map": "/project-3/static/js/runtime-main.0fa09ced.js.map",
     "static/css/2.b5b542c0.chunk.css": "/project-3/static/css/2.b5b542c0.chunk.css",
-    "static/js/2.7ae0fb13.chunk.js": "/project-3/static/js/2.7ae0fb13.chunk.js",
-    "static/js/2.7ae0fb13.chunk.js.map": "/project-3/static/js/2.7ae0fb13.chunk.js.map",
+    "static/js/2.30adb6f9.chunk.js": "/project-3/static/js/2.30adb6f9.chunk.js",
+    "static/js/2.30adb6f9.chunk.js.map": "/project-3/static/js/2.30adb6f9.chunk.js.map",
     "index.html": "/project-3/index.html",
-    "precache-manifest.53162e3359a22e90ab57c0b40f55cd63.js": "/project-3/precache-manifest.53162e3359a22e90ab57c0b40f55cd63.js",
+    "precache-manifest.92ea38c756e2e34442e365fd9fe06e21.js": "/project-3/precache-manifest.92ea38c756e2e34442e365fd9fe06e21.js",
     "service-worker.js": "/project-3/service-worker.js",
     "static/css/2.b5b542c0.chunk.css.map": "/project-3/static/css/2.b5b542c0.chunk.css.map",
-    "static/css/main.17eb934e.chunk.css.map": "/project-3/static/css/main.17eb934e.chunk.css.map",
-    "static/js/2.7ae0fb13.chunk.js.LICENSE": "/project-3/static/js/2.7ae0fb13.chunk.js.LICENSE",
+    "static/css/main.52cfdacb.chunk.css.map": "/project-3/static/css/main.52cfdacb.chunk.css.map",
+    "static/js/2.30adb6f9.chunk.js.LICENSE": "/project-3/static/js/2.30adb6f9.chunk.js.LICENSE",
+    "static/media/11ImagefromiOS.jpg": "/project-3/static/media/11ImagefromiOS.d464efc2.jpg",
+    "static/media/ImagefromiOS.jpg": "/project-3/static/media/ImagefromiOS.66b607c1.jpg",
+    "static/media/Snapchat-1115162626.jpg": "/project-3/static/media/Snapchat-1115162626.e632c8ab.jpg",
+    "static/media/image.png": "/project-3/static/media/image.87d86688.png",
     "static/media/styles.css": "/project-3/static/media/revicons.2feb69cc.eot"
   },
   "entrypoints": [
     "static/js/runtime-main.0fa09ced.js",
     "static/css/2.b5b542c0.chunk.css",
-    "static/js/2.7ae0fb13.chunk.js",
-    "static/css/main.17eb934e.chunk.css",
-    "static/js/main.35c76b19.chunk.js"
+    "static/js/2.30adb6f9.chunk.js",
+    "static/css/main.52cfdacb.chunk.css",
+    "static/js/main.9b706211.chunk.js"
   ]
 }
