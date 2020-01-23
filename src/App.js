@@ -4,7 +4,7 @@ import './App.css';
 
 
 import {Route} from 'react-router-dom'
-import Footer from './components/Footer'
+// import Footer from './components/Footer'
 
 // import './App.css';
 
@@ -57,7 +57,7 @@ class App extends React.Component {
     this.apiCall(popularPath,'popular')  
   }
   render(){
-    console.log(key)
+    
    
   return (
     <div className="App alsubaie">
